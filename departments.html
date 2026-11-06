@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Departments - Mobifabros Clinic</title>
+  <meta name="description" content="Explore the medical departments and specialized rural healthcare services offered at Mobifabros Clinic.">
+  <meta name="keywords" content="Mobifabros Clinic, Departments, Rural Healthcare, Family Practice, Maternal Health">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="departments-page">
+
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a
+              href="mailto:info@mobifabrosclinic.com">info@mobifabrosclinic.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+254 114 376 853</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#!" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#!" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#!" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#!" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename">Mobifabros Clinic</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="departments.html" class="active">Departments</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="heading-title">Our Departments</h1>
+              <p class="mb-0">
+                Bringing essential medical care closer to home. Explore our core clinical departments tailored to meet the everyday health and wellness needs of our community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Departments</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Departments Tabs Section -->
+    <section id="departments-tabs" class="departments-tabs section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="medical-specialties">
+          <div class="row">
+            <div class="col-12">
+              <div class="specialty-navigation">
+                <div class="nav nav-pills d-flex" id="specialty-tabs" role="tablist" data-aos="fade-up"
+                  data-aos-delay="400">
+                  <a class="nav-link department-tab active" id="general-tab" data-bs-toggle="pill"
+                    href="#departments-tabs-general" role="tab" aria-controls="departments-tabs-general"
+                    aria-selected="true" data-aos="fade-up" data-aos-delay="100">General Practice</a>
+                  <a class="nav-link department-tab" id="maternal-tab" data-bs-toggle="pill"
+                    href="#departments-tabs-maternal" role="tab" aria-controls="departments-tabs-maternal"
+                    aria-selected="false" data-aos="fade-up" data-aos-delay="150">Maternal & Child</a>
+                  <a class="nav-link department-tab" id="lab-tab" data-bs-toggle="pill"
+                    href="#departments-tabs-lab" role="tab" aria-controls="departments-tabs-lab"
+                    aria-selected="false" data-aos="fade-up" data-aos-delay="200">Diagnostics & Lab</a>
+                  <a class="nav-link department-tab" id="urgent-tab" data-bs-toggle="pill"
+                    href="#departments-tabs-urgent" role="tab" aria-controls="departments-tabs-urgent"
+                    aria-selected="false" data-aos="fade-up" data-aos-delay="250">Urgent Care</a>
+                  <a class="nav-link department-tab" id="outreach-tab" data-bs-toggle="pill"
+                    href="#departments-tabs-outreach" role="tab" aria-controls="departments-tabs-outreach"
+                    aria-selected="false" data-aos="fade-up" data-aos-delay="300">Community Outreach</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="tab-content department-content" id="specialty-content" data-aos="fade-up"
+                data-aos-delay="500">
+
+                <!-- General Practice Tab -->
+                <div class="tab-pane fade show active" id="departments-tabs-general" role="tabpanel"
+                  aria-labelledby="general-tab">
+                  <div class="row department-layout">
+                    <div class="col-lg-4 order-lg-2">
+                      <div class="department-image">
+                        <img src="assets/img/health/neurology-3.webp" alt="General Practice Department" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 order-lg-1">
+                      <div class="department-info">
+                        <h2 class="department-title">General Family Practice</h2>
+                        <p class="department-description">Your first point of contact for everyday health. We provide comprehensive consultations, chronic disease monitoring, and preventive health guidance for every member of the family.</p>
+
+                        <div class="row mt-4">
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-stethoscope"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Routine Check-ups</h4>
+                                <p>Regular wellness assessments to catch health issues early and keep your family strong.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-pills"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Common Illness Treatment</h4>
+                                <p>Fast and reliable diagnosis and treatment for everyday ailments like flu, infections, and fevers.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-heartbeat"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Chronic Care</h4>
+                                <p>Continuous, supportive management for conditions such as hypertension and diabetes.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-file-medical"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Personalized Care Plans</h4>
+                                <p>Tailored medical advice and health management plans designed for rural living.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End General Practice Tab -->
+
+                <!-- Maternal & Child Tab -->
+                <div class="tab-pane fade" id="departments-tabs-maternal" role="tabpanel" aria-labelledby="maternal-tab">
+                  <div class="row department-layout">
+                    <div class="col-lg-4 order-lg-2">
+                      <div class="department-image">
+                        <img src="assets/img/health/surgery-2.webp" alt="Maternal & Child Health" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 order-lg-1">
+                      <div class="department-info">
+                        <h2 class="department-title">Maternal & Child Health Department</h2>
+                        <p class="department-description">Safeguarding the health of mothers and little ones. We provide compassionate support from pregnancy through childhood development.</p>
+
+                        <div class="row mt-4">
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-baby"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Antenatal Care</h4>
+                                <p>Dedicated health monitoring and guidance for expectant mothers for safe pregnancies.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-shield-alt"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Child Immunizations</h4>
+                                <p>Routine vaccinations protecting infants and children against preventable diseases.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-child"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Growth Monitoring</h4>
+                                <p>Tracking child development, nutritional support, and vitamin supplementation.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-hands-helping"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Postnatal Support</h4>
+                                <p>Guidance and care for mothers and newborns following delivery.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Maternal & Child Tab -->
+
+                <!-- Diagnostics & Lab Tab -->
+                <div class="tab-pane fade" id="departments-tabs-lab" role="tabpanel" aria-labelledby="lab-tab">
+                  <div class="row department-layout">
+                    <div class="col-lg-4 order-lg-2">
+                      <div class="department-image">
+                        <img src="assets/img/health/dermatology-1.webp" alt="Diagnostics & Lab" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 order-lg-1">
+                      <div class="department-info">
+                        <h2 class="department-title">Diagnostics & Laboratory Services</h2>
+                        <p class="department-description">Accurate and timely testing right on-site so doctors can diagnose conditions quickly without requiring unnecessary travel.</p>
+
+                        <div class="row mt-4">
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-tint"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Blood Tests</h4>
+                                <p>Quick screening for malaria, typhoid, blood sugar levels, and complete blood counts.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-flask"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Urinalysis & Diagnostics</h4>
+                                <p>Essential lab tests to identify infections and monitor organ health accurately.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Vital Screening</h4>
+                                <p>Blood pressure, BMI, and metabolic assessments for early detection.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-clock"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Fast Results</h4>
+                                <p>Quick turnaround times to ensure treatment starts promptly.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Diagnostics & Lab Tab -->
+
+                <!-- Urgent Care Tab -->
+                <div class="tab-pane fade" id="departments-tabs-urgent" role="tabpanel"
+                  aria-labelledby="urgent-tab">
+                  <div class="row department-layout">
+                    <div class="col-lg-4 order-lg-2">
+                      <div class="department-image">
+                        <img src="assets/img/health/pediatrics-4.webp" alt="Urgent Care" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 order-lg-1">
+                      <div class="department-info">
+                        <h2 class="department-title">Urgent Care & First Aid</h2>
+                        <p class="department-description">Reliable medical assistance for sudden injuries, minor trauma, and acute health flare-ups when you need prompt attention.</p>
+
+                        <div class="row mt-4">
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-medkit"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Minor Injury Care</h4>
+                                <p>Wound cleaning, stitches, bandaging, and minor trauma treatment.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-bolt"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Acute Symptom Relief</h4>
+                                <p>Immediate stabilization and treatment for sudden high fevers, severe pain, or allergic reactions.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-ambulance"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Emergency Triage</h4>
+                                <p>Initial assessment and stabilization before referral to specialized facilities if needed.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-user-nurse"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Nursing Support</h4>
+                                <p>Dedicated injection, dressing, and outpatient observation services.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Urgent Care Tab -->
+
+                <!-- Community Outreach Tab -->
+                <div class="tab-pane fade" id="departments-tabs-outreach" role="tabpanel"
+                  aria-labelledby="outreach-tab">
+                  <div class="row department-layout">
+                    <div class="col-lg-4 order-lg-2">
+                      <div class="department-image">
+                        <img src="assets/img/health/cardiology-3.webp" alt="Community Health Outreach" class="img-fluid">
+                      </div>
+                    </div>
+                    <div class="col-lg-8 order-lg-1">
+                      <div class="department-info">
+                        <h2 class="department-title">Community Health & Outreach</h2>
+                        <p class="department-description">Taking healthcare beyond clinic walls. We work directly with rural villages to promote preventive wellness and health education.</p>
+
+                        <div class="row mt-4">
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Mobile Health Camps</h4>
+                                <p>Bringing basic screenings and doctor consultations directly to local neighborhoods.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-book-medical"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Health Education</h4>
+                                <p>Practical workshops on hygiene, sanitation, nutrition, and disease prevention.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-hands-helping"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Preventive Screening</h4>
+                                <p>Mass blood pressure and blood sugar checks for early community risk awareness.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="service-item">
+                              <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                              </div>
+                              <div class="service-content">
+                                <h4>Family Wellness Support</h4>
+                                <p>Building a healthier rural community through continuous support and guidance.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Community Outreach Tab -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Departments Tabs Section -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-image: url(assets/img/bg/);"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #6351ce"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span class="text-warning">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="" style="background-image: url(assets/img/bg/abstract-bg-3.webp);">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">MobiFabros-Clinic</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+             No one should have to travel far for great care. Mobifabros Clinic brings trusted, affordable medical services right to our community,
+             keeping you and your family healthy and strong.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Services</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="services.html" class="text-dark">Primary Healthcare & General Consultation</a>
+            </p>
+            <p>
+              <a href="services.html" class="text-dark">Maternal & Child Health</a>
+            </p>
+            <p>
+              <a href="services.html" class="text-dark">Diagnostic & Laboratory Services</a>
+            </p>
+            <p>
+              <a href="services.html" class="text-dark">Community Health & Outreach</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="index.html" class="text-dark">Home</a>
+            </p>
+            <p>
+              <a href="about.html" class="text-dark">About</a>
+            </p>
+            <p>
+              <a href="departments.html" class="text-dark">Departments</a>
+            </p>
+            <p>
+              <a href="services.html" class="text-dark">Services</a>
+            </p>
+            <p>
+              <a href="appointment.html" class="text-dark">Appointment</a>
+            </p>
+             <p>
+              <a href="contact.html" class="text-dark">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Nairobi, Kenya</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@mobifabrosclinic.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +254 114 376 853</p>
+            <p><i class="fas fa-print mr-3"></i> +254 114 376 853</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: blue;"
+         >
+      © 2026 Copyright: Mobifabros-Clinic
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#!" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
