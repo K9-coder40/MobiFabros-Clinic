@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Services - MobiFabros-Clinic{% endblock %}
+
+{% block content %}
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="heading-title fw-bold">Our Services</h1>
+              <p class="mb-0">
+              At Mobifabros Clinic, we believe that quality healthcare should never 
+              feel out of reach. From everyday family check-ups and maternal care to 
+              rapid diagnostics and reliable treatments, our comprehensive medical services
+               are designed to keep you and your loved ones healthy and strong. We combine 
+              professional expertise with a deep commitment to our neighbors—bringing trusted, compassionate care right where you need it most.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="current">Services</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="{% static 'assets/img/health/cardiology-2.webp' %}" alt="Cardiology Services" class="img-fluid">
+                <div class="service-overlay">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Primary Healthcare & General Consultation</h3>
+                <p>
+                  <ul>
+                    <li><b>General Check-ups:</b> Routine health assessments for individuals and families to monitor well-being, catch issues early, and stay healthy.</li>
+                    <li><b>Treatment of Common Illnesses:</b> Quick, reliable diagnosis and treatment for everyday ailments like malaria, respiratory infections, stomach bugs, and flu.</li>
+                    <li><b>Chronic Disease Management:</b> Continuous, supportive care and monitoring for conditions such as high blood pressure, diabetes, and asthma.</li>
+                  </ul>
+                </p>
+               
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="{% static 'assets/img/health/neurology-3.webp' %}" alt="Neurology Services" class="img-fluid">
+                <div class="service-overlay">
+                  <i class="fas fa-brain"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Maternal & Child Health</h3>
+                <p>
+                  <ul>
+                    <li><b>Antenatal & Postnatal Care:</b> Dedicated support and health check-ups for expectant mothers and new babies to ensure safe pregnancies and healthy development.</li>
+                    <li><b>Child Immunizations:</b> Routine vaccinations to protect infants and children against preventable childhood diseases.</li>
+                    <li><b>Growth Monitoring:</b> Regular check-ins on children's development, nutrition advice, and vitamin supplementation.</li>
+                  </ul>
+                </p>
+              
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="{% static 'assets/img/health/orthopedics-1.webp' %}" alt="Orthopedics Services" class="img-fluid">
+                <div class="service-overlay">
+                  <i class="fas fa-bone"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Diagnostic & Laboratory Services</h3>
+                <p>
+                  <ul>
+                    <li><b>On-Site Testing:</b> Fast, accurate laboratory tests (such as malaria blood smears, typhoid tests, and urinalysis) to help doctors diagnose conditions quickly without unnecessary travel.</li>
+                    <li><b>Basic Screening:</b> pressure checks, blood sugar level testing, and physical assessments.</li>
+                  </ul>
+                </p>
+                             
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="service-item">
+              <div class="service-image">
+                <img src="{% static 'assets/img/health/pediatrics-4.webp' %}" alt="Pediatrics Services" class="img-fluid">
+                <div class="service-overlay">
+                  <i class="fas fa-child"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3>Community Health & Outreach</h3>
+                <p>
+                  <ul>
+                    <li><b>Mobile Health Camps & Education:</b> Bringing basic health screenings, wellness talks, and preventive care directly to local villages and community groups.</li>
+                    <li><b>Health Education & Counseling:</b> Practical guidance on nutrition, hygiene, sanitation, and family wellness tailored to everyday rural living.</li>
+                  </ul>
+                </p>
+              
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+         
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+{% endblock %}

@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About - MobiFabros-Clinic{% endblock %}
+
+{% block content %}
+   <!-- Page Title -->
+<div class="page-title p-3 mt-2" style="background-image: url(assets/img/bg/abstract-bg-3.webp);">
+  <div class="heading">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1 class="heading-title mt-4">About Us</h1>
+          <p class="mb-0">
+            Bringing reliable, affordable, and compassionate healthcare right to our community. At Mobifabros Clinic, we believe quality medical care should always be close to home, trusted, and accessible to every family.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li class="current">About</li>
+      </ol>
+    </div>
+  </nav>
+</div>
+<!-- End Page Title -->
+
+    <!-- About Section -->
+    <section id="about" class="about section" style="background-color: cadetblue;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="about-content">
+              <h2 class="fw-bold">Our Story: Healthcare Built on Community</h2>
+              <p>At Mobifabros Clinic, we believe that getting quality medical care shouldn't mean traveling long distances or facing complicated hurdles. 
+              Founded with a deep passion for community well-being, our clinic was created to bring reliable, 
+              professional healthcare right where it's needed most—close to home.</p>
+
+              <p>We understand the everyday health challenges faced by rural families. 
+                That is why we have built a practice rooted in listening, understanding, 
+                and providing practical medical support for people of all ages.</p>
+
+           
+            </div><!-- End About Content -->
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="image-wrapper">
+              <img src="assets/img/group.jpeg" class="img-fluid main-image" alt="Healthcare facility">
+              <div class="floating-image" data-aos="zoom-in" data-aos-delay="400">
+                <img src="assets/img/loro.jpeg" class="img-fluid" alt="Medical team">
+              </div>
+            </div><!-- End Image Wrapper -->
+          </div>
+        </div>
+
+        <div class="values-section" data-aos="fade-up" data-aos-delay="300">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h3 class="fw-bold">Our Core Values</h3>
+              <p class="section-description">These principles guide everything we do in our commitment to exceptional
+                healthcare</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="bi bi-heart-pulse"></i>
+                </div>
+                <h4>Compassion</h4>
+                <p>Treating every patient with genuine empathy, kindness, and dignity.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h4>Community</h4>
+                <p>Standing by our neighbors and working together for a healthier future.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="bi bi-house-heart"></i>
+                </div>
+                <h4>Accessibility</h4>
+                <p>Ensuring that quality health advice and treatment are never out of reach.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>Trust</h4>
+                <p>Building long-lasting relationships based on honesty, safety, and dependable care.</p>
+              </div>
+            </div>
+          </div><!-- End Values Row -->
+        </div><!-- End Values Section -->
+
+      <!-- mission -->
+         <div class="mission-section mt-5" data-aos="fade-up" data-aos-delay="400">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h3 class="fw-bold">Our Mission</h3>
+              <p class="section-description">To bridge the healthcare gap in rural areas by offering accessible, affordable, 
+                and compassionate medical services that empower families to live healthier, stronger lives.</p>
+            </div>
+          </div>
+        <!-- vision -->
+            <div class="vision-section mt-5" data-aos="fade-up" data-aos-delay="400">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h3 class="fw-bold">Our Vision</h3>
+              <p class="section-description">To be a trusted pillar of health in our community—where every patient is treated like family, 
+                and professional medical care is always within reach.</p>
+            </div>
+          </div>
+        <!-- why choose us -->
+           <div class="why choose us-section mt-5" data-aos="fade-up" data-aos-delay="400">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="fw-bold text-center">Why Choose Mobifabros Clinic?</h3>
+              <p>
+                <ul>
+                  <li class="m-5">Close to Home: No long, expensive journeys required. 
+                    We are right here in the community, ready to serve you and your neighbors.</li>
+                  <li class="m-5">Care for the Whole Family: From children to grandparents, we provide
+                   comprehensive health check-ups, treatments, and wellness advice for every generation.</li>
+                  <li class="m-5">A Friendly, Welcoming Team: You will always be greeted by caring professionals who
+                   take the time to listen to your concerns and treat you with respect.</li>  
+                   <li class="m-5">Affordable & Reliable: We are committed to offering straightforward,
+                     honest healthcare services that fit your family's needs.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+
+
+
+
+
+      </div>
+
+    </section><!-- /About Section -->
+
+  {% endblock %}

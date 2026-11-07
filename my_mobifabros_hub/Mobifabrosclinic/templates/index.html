@@ -1,85 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>MobiFabros-Clinic</title>
-  <meta name="description" content="Mobifabros Clinic brings trusted, affordable medical services right to our community, keeping you and your family healthy and strong.">
-  <meta name="keywords" content="Mobifabros Clinic, Rural Healthcare, Family Practice, Medical Services, Clinic Kenya">
+{% block title %}MobiFabros-Clinic{% endblock %}
 
-  <!-- Favicons -->
-  <link href="assets/img/favlogo.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header fixed-top">
-
-    <div class="topbar d-flex align-items-center dark-background">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a
-              href="mailto:info@mobifabrosclinic.com">info@mobifabrosclinic.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+254 114 376 853</span></i>
-        </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#!" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#!" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#!" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#!" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
-
-    <div class="branding d-flex align-items-center">
-
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">MobiFabros-Clinic</h1>
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="departments.html">Departments</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="appointment.html">Appointment</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-      </div>
-
-    </div>
-
-  </header>
-
-  <main class="main">
-
+{% block content %}
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
@@ -112,8 +36,8 @@
               </p>
 
               <div class="hero-actions" data-aos="fade-right" data-aos-delay="600">
-                <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
-                <a href="contact.html" class="btn btn-primary">Talk to a Doctor</a>
+                <a href="{% url 'appointment' %}" class="btn btn-primary">Book Appointment</a>
+                <a href="{% url 'contact' %}" class="btn btn-primary">Talk to a Doctor</a>
               </div>
 
               <div class="emergency-contact" data-aos="fade-right" data-aos-delay="700">
@@ -131,7 +55,7 @@
           <div class="col-lg-6">
             <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
               <div class="main-image">
-                <img src="assets/img/mbogi.jpeg" alt="Modern Healthcare Facility" class="img-fluid">
+                <img src="{% static 'assets/img/mbogi.jpeg' %}" alt="Modern Healthcare Facility" class="img-fluid">
                 <div class="floating-card appointment-card">
                   <div class="card-icon">
                     <i class="bi bi-calendar-check"></i>
@@ -201,7 +125,7 @@
               </div>
 
               <div class="cta-section">
-                <a href="about.html" class="btn-primary">Learn More About Us</a>
+                <a href="{% url 'about' %}" class="btn-primary">Learn More About Us</a>
               </div>
             </div>
           </div>
@@ -209,7 +133,7 @@
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="about-visual">
               <div class="main-image">
-                <img src="assets/img/docs.jpeg" alt="Modern medical facility" class="img-fluid">
+                <img src="{% static 'assets/img/docs.jpeg' %}" alt="Modern medical facility" class="img-fluid">
               </div>
               <div class="floating-card">
                 <div class="card-content">
@@ -261,12 +185,12 @@
                   <span><i class="bi bi-check-circle-fill"></i>Routine Check-ups & Consultations</span>
                   <span><i class="bi bi-check-circle-fill"></i>Chronic Disease Monitoring</span>
                 </div>
-                <a href="departments.html" class="specialty-link">
+                <a href="{% url 'departments' %}" class="specialty-link">
                   Explore General Practice <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
               <div class="specialty-visual">
-                <img src="assets/img/health/cardiology-1.webp" alt="General Family Practice" class="img-fluid">
+                <img src="{% static 'assets/img/health/cardiology-1.webp' %}" alt="General Family Practice" class="img-fluid">
                 <div class="visual-overlay">
                   <i class="bi bi-heart-pulse"></i>
                 </div>
@@ -286,12 +210,12 @@
                   <span><i class="bi bi-check-circle-fill"></i>Antenatal & Postnatal Care</span>
                   <span><i class="bi bi-check-circle-fill"></i>Child Immunizations & Growth Tracking</span>
                 </div>
-                <a href="departments.html" class="specialty-link">
+                <a href="{% url 'departments' %}" class="specialty-link">
                   Explore Maternal & Child <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
               <div class="specialty-visual">
-                <img src="assets/img/health/neurology-4.webp" alt="Maternal and Child Health" class="img-fluid">
+                <img src="{% static 'assets/img/health/neurology-4.webp' %}" alt="Maternal and Child Health" class="img-fluid">
                 <div class="visual-overlay">
                   <i class="bi bi-shield-plus"></i>
                 </div>
@@ -311,7 +235,7 @@
                 <li>Blood Sugar Screening</li>
                 <li>Urinalysis & Vitals</li>
               </ul>
-              <a href="departments.html" class="highlight-cta">Learn More</a>
+              <a href="{% url 'departments' %}" class="highlight-cta">Learn More</a>
             </div>
           </div><!-- End Department Highlight -->
 
@@ -327,7 +251,7 @@
                 <li>Wound Dressing</li>
                 <li>Outpatient Stabilization</li>
               </ul>
-              <a href="departments.html" class="highlight-cta">Learn More</a>
+              <a href="{% url 'departments' %}" class="highlight-cta">Learn More</a>
             </div>
           </div><!-- End Department Highlight -->
 
@@ -343,7 +267,7 @@
                 <li>Hygiene & Nutrition Education</li>
                 <li>Family Wellness Support</li>
               </ul>
-              <a href="departments.html" class="highlight-cta">Learn More</a>
+              <a href="{% url 'departments' %}" class="highlight-cta">Learn More</a>
             </div>
           </div><!-- End Department Highlight -->
 
@@ -386,7 +310,7 @@
           <div class="col-lg-8" data-aos="fade-right" data-aos-delay="200">
             <div class="featured-service-main">
               <div class="service-image-wrapper">
-                <img src="assets/img/health/consultation-4.webp" alt="Premier Healthcare Services" class="img-fluid"
+                <img src="{% static 'assets/img/health/consultation-4.webp' %}" alt="Premier Healthcare Services" class="img-fluid"
                   loading="lazy">
                 <div class="service-overlay">
                   <div class="service-badge">
@@ -398,7 +322,7 @@
               <div class="service-details">
                 <h2>Trusted Care for Every Generation</h2>
                 <p>From children to grandparents, we provide comprehensive health check-ups, treatments, and wellness advice designed to keep your family strong and supported.</p>
-                <a href="services.html" class="main-cta">Explore All Services</a>
+                <a href="{% url 'services' %}" class="main-cta">Explore All Services</a>
               </div>
             </div>
           </div>
@@ -413,7 +337,7 @@
                 <div class="service-info">
                   <h4>General Consultation</h4>
                   <p>Professional diagnosis and personalized treatment for everyday illnesses and health concerns.</p>
-                  <a href="services.html" class="service-link">Learn More</a>
+                  <a href="{% url 'services' %}" class="service-link">Learn More</a>
                 </div>
               </div>
 
@@ -424,7 +348,7 @@
                 <div class="service-info">
                   <h4>Maternal & Child Health</h4>
                   <p>Antenatal check-ups, postnatal guidance, and routine immunizations for healthy babies.</p>
-                  <a href="services.html" class="service-link">Learn More</a>
+                  <a href="{% url 'services' %}" class="service-link">Learn More</a>
                 </div>
               </div>
 
@@ -435,7 +359,7 @@
                 <div class="service-info">
                   <h4>Diagnostic Lab</h4>
                   <p>Reliable on-site laboratory testing for fast results and prompt medical treatment.</p>
-                  <a href="services.html" class="service-link">Learn More</a>
+                  <a href="{% url 'services' %}" class="service-link">Learn More</a>
                 </div>
               </div>
 
@@ -450,7 +374,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="specialty-card">
                 <div class="specialty-image">
-                  <img src="assets/img/health/maternal-2.webp" alt="Maternal Care" class="img-fluid" loading="lazy">
+                  <img src="{% static 'assets/img/health/maternal-2.webp' %}" alt="Maternal Care" class="img-fluid" loading="lazy">
                 </div>
                 <div class="specialty-content">
                   <h5>Maternal Care</h5>
@@ -462,7 +386,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="specialty-card">
                 <div class="specialty-image">
-                  <img src="assets/img/health/vaccination-3.webp" alt="Vaccination" class="img-fluid" loading="lazy">
+                  <img src="{% static 'assets/img/health/vaccination-3.webp' %}" alt="Vaccination" class="img-fluid" loading="lazy">
                 </div>
                 <div class="specialty-content">
                   <h5>Immunization</h5>
@@ -474,7 +398,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="specialty-card">
                 <div class="specialty-image">
-                  <img src="assets/img/health/emergency-1.webp" alt="Emergency Care" class="img-fluid" loading="lazy">
+                  <img src="{% static 'assets/img/health/emergency-1.webp' %}" alt="Emergency Care" class="img-fluid" loading="lazy">
                 </div>
                 <div class="specialty-content">
                   <h5>Urgent Assistance</h5>
@@ -486,7 +410,7 @@
             <div class="col-lg-3 col-md-6">
               <div class="specialty-card">
                 <div class="specialty-image">
-                  <img src="assets/img/health/facilities-6.webp" alt="Advanced Tech" class="img-fluid" loading="lazy">
+                  <img src="{% static 'assets/img/health/facilities-6.webp' %}" alt="Advanced Tech" class="img-fluid" loading="lazy">
                 </div>
                 <div class="specialty-content">
                   <h5>Community Health</h5>
@@ -502,19 +426,12 @@
 
     </section><!-- /Featured Services Section -->
 
-   
-        </div>
-
-        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
-          <a href="departments.html" class="btn-view-all">
-            View All Departments
-            <i class="bi bi-arrow-right"></i>
-          </a>
-        </div>
-
-      </div>
-
-    </section><!-- /Find A Doctor Section -->
+    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
+      <a href="{% url 'departments' %}" class="btn-view-all">
+        View All Departments
+        <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section light-background">
@@ -530,11 +447,11 @@
                 <p>We are dedicated to bringing reliable, affordable, and compassionate medical services right where you need them most—close to home.</p>
 
                 <div class="cta-wrapper">
-                  <a href="appointment.html" class="primary-cta">
+                  <a href="{% url 'appointment' %}" class="primary-cta">
                     <span>Schedule Consultation</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
-                  <a href="services.html" class="secondary-cta">
+                  <a href="{% url 'services' %}" class="secondary-cta">
                     <span>Explore Services</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
@@ -544,7 +461,7 @@
 
             <div class="col-lg-6">
               <div class="image-container" data-aos="fade-left" data-aos-delay="300">
-                <img src="assets/img/hall.jpeg" alt="Medical Excellence" class="img-fluid">
+                <img src="{% static 'assets/img/hall.jpeg' %}" alt="Medical Excellence" class="img-fluid">
               </div>
             </div>
 
@@ -605,7 +522,7 @@
                   <i class="bi bi-telephone"></i>
                   <span>+254 114 376 853</span>
                 </a>
-                <a href="contact.html" class="contact-link">Contact Us</a>
+                <a href="{% url 'contact' %}" class="contact-link">Contact Us</a>
               </div>
             </div>
 
@@ -615,165 +532,4 @@
       </div>
 
     </section><!-- /Call To Action Section -->
-
-  </main>
-
-  <!-- Footer -->
-  <footer
-          class="text-center text-lg-start text-white"
-          style="background-image: url(assets/img/bg/);"
-          >
-    <!-- Section: Social media -->
-    <section
-             class="d-flex justify-content-between p-4"
-             style="background-color: #6351ce"
-             >
-      <!-- Left -->
-      <div class="me-5">
-        <span class="text-warning">Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-
-      <!-- Right -->
-      <div>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="" style="background-image: url(assets/img/bg/abstract-bg-3.webp);">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold">MobiFabros-Clinic</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-             No one should have to travel far for great care. Mobifabros Clinic brings trusted, affordable medical services right to our community,
-             keeping you and your family healthy and strong.
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Services</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              <a href="services.html" class="text-dark">Primary Healthcare & General Consultation</a>
-            </p>
-            <p>
-              <a href="services.html" class="text-dark">Maternal & Child Health</a>
-            </p>
-            <p>
-              <a href="services.html" class="text-dark">Diagnostic & Laboratory Services</a>
-            </p>
-            <p>
-              <a href="services.html" class="text-dark">Community Health & Outreach</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Useful links</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p>
-              <a href="index.html" class="text-dark">Home</a>
-            </p>
-            <p>
-              <a href="about.html" class="text-dark">About</a>
-            </p>
-            <p>
-              <a href="departments.html" class="text-dark">Departments</a>
-            </p>
-            <p>
-              <a href="services.html" class="text-dark">Services</a>
-            </p>
-            <p>
-              <a href="appointment.html" class="text-dark">Appointment</a>
-            </p>
-             <p>
-              <a href="contact.html" class="text-dark">Contact</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contact</h6>
-            <hr
-                class="mb-4 mt-0 d-inline-block mx-auto"
-                style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-            <p><i class="fas fa-home mr-3"></i> Nairobi, Kenya</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@mobifabrosclinic.com</p>
-            <p><i class="fas fa-phone mr-3"></i> +254 114 376 853</p>
-            <p><i class="fas fa-print mr-3"></i> +254 114 376 853</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
-    <div
-         class="text-center p-3"
-         style="background-color: blue;"
-         >
-      © 2026 Copyright: Mobifabros-Clinic
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-
-  <!-- Scroll Top -->
-  <a href="#!" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+{% endblock %}
