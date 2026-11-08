@@ -42,7 +42,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4f8ff;
+  --background-color: #133d85;
   --surface-color: #ffffff;
 }
 
@@ -66,6 +66,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  padding-top: 110px;
 }
 
 a {
@@ -509,6 +510,11 @@ footer {
   background-size: cover;
   background-position: center;
   font-size: 0.95rem;
+  position: relative !important;
+  clear: both;
+  width: 100%;
+  bottom: auto !important;
+  margin-top: auto !important;
 }
 
 /* Social Media Section Top Bar */

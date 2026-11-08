@@ -27,7 +27,7 @@
   <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
   <!-- Header / Navigation -->
   <header id="header" class="header fixed-top">
@@ -64,14 +64,14 @@
   <!-- End Header -->
 
   <!-- Main Dynamic Content Block -->
-  <main class="main">
+  <main class="main flex-grow-1">
     {% block content %}
     <!-- Individual pages will inject their specific sections here -->
     {% endblock %}
   </main>
 
   <!-- Footer -->
-  <footer id="footer" class="footer light-background">
+  <footer id="footer" class="footer light-background" style="position: relative !important; bottom: auto !important; margin-top: auto !important;">
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
@@ -106,11 +106,24 @@
   </footer>
   <!-- End Footer -->
 
-  <!-- Vendor JS Files -->
+ <!-- Scroll Top -->
+  <a href="#!" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+<!-- Vendor JS Files -->
   <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
   <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
   <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  
+  <!-- Load PureCounter BEFORE main.js -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+
+  <!-- Load main.js exactly once at the end -->
   <script src="{% static 'assets/js/main.js' %}"></script>
 
 </body>
