@@ -29,7 +29,7 @@ def appointment(request):
         department = request.POST.get('department')
         doctor = request.POST.get('doctor')
         message_text = request.POST.get('message')
-
+        messages.success(request, 'Your appointment request has been successfully submitted!')
         # Save to database
         Appointment.objects.create(
             name=name,
@@ -40,8 +40,8 @@ def appointment(request):
             doctor=doctor,
             message=message_text
         )
-        messages.success(request, 'Your appointment request has been successfully submitted!')
-        return redirect('index')  
+
+        return redirect('index')
     return render(request, 'appointment.html')
 
 def contact(request):
@@ -51,6 +51,7 @@ def contact(request):
         email = request.POST.get('email')
         subject = request.POST.get('subject')
         message_text = request.POST.get('message')
+        messages.success(request, 'Your message has been sent successfully. We will get back to you soon!')
 
         # Save to database
         ContactMessage.objects.create(
@@ -59,6 +60,6 @@ def contact(request):
             subject=subject,
             message=message_text
         )
-        messages.success(request, 'Your message has been sent successfully. We will get back to you soon!')
+       
         return redirect('index')  # Matches your url name
     return render(request, 'contact.html')
