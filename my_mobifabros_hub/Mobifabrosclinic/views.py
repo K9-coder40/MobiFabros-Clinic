@@ -61,5 +61,5 @@ def contact(request):
             message=message_text
         )
        
-        return redirect('index')  # Matches your url name
+        return redirect('index')  
     return render(request, 'contact.html')
